@@ -1,7 +1,11 @@
 # react-ssr
-react-ssr demo
+react-ssr demo      
+koa + webpack5 + react
 
 
 ### 更新日志
 `2020-12-12` 
 + 项目初始化
+
+`2020-12-13`
++ 服务器端客户端初始化完成

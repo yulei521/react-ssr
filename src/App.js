@@ -5,9 +5,9 @@ function HelloWorld () {
 
     return <div>
         <h3>React SSR</h3>
-        <span>{`当前值${number}`}</span>
+        <div>{`当前值${number}`}</div>
         <button onClick={() => addNumber(number + 1)}>累加器</button>
     </div>
 }
 
-export default HelloWorld;
+export default <HelloWorld/>;

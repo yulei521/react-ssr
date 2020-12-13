@@ -11,6 +11,7 @@
     "babel-loader": "^8.2.2",
     "koa": "^2.13.0",
     "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
     "nodemon": "^2.0.6",
     "path": "^0.12.7",
     "react": "^17.0.1",
@@ -20,7 +21,9 @@
     "webpack-node-externals": "^2.5.2"
   },
   "scripts": {
+    "start": "npm run dev:client && npm run dev:server && npm run dev:start",
     "dev:start": "nodemon --watch build --exec node \"./build/bundle.js\"",
+    "dev:client": "webpack --config webpack.client.js --watch",
     "dev:server": "webpack --config webpack.server.js --watch"
   },
   "repository": {
